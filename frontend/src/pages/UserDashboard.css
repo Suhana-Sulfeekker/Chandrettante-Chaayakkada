@@ -1,0 +1,78 @@
+.user-dashboard {
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', sans-serif;
+  padding: 20px;
+  background-color: #fff9ee;
+}
+
+.menu-section, .orders-section {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.menu-item, .order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-item:last-child, .order-item:last-child {
+  border-bottom: none;
+}
+
+.menu-item span {
+  flex: 1;
+}
+
+.menu-item input {
+  width: 60px;
+  padding: 6px;
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+button {
+  background-color: #ff9f1c;
+  color: white;
+  padding: 10px 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #e28800;
+}
+
+.order-summary {
+  background-color: #fdf7f2;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border-left: 5px solid #ff9f1c;
+}
+
+.order-summary ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.order-summary p {
+  margin: 6px 0;
+}

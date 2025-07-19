@@ -1,0 +1,111 @@
+/* Base styles */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8e4c0;
+  height: 100%;
+  width: 100%;
+}
+
+/* Container */
+.landing-page {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  position: relative;
+}
+
+/* OWNER LOGIN Button */
+.owner-login {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background-color: #5E8764;
+  color: white;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background 0.3s;
+}
+.owner-login:hover {
+  background-color: #78A672;
+}
+
+/* Left side */
+.left-panel {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+}
+
+.main-heading {
+  font-size: 80px;
+  color: #365437;
+  padding-top:100px;
+}
+
+.order-button {
+  background-color: #365437;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  padding: 18px 36px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.order-button:hover {
+  background-color: #724D2D;
+}
+
+/* Right side */
+.right-panel {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-image {
+  border-radius: 5%;
+  padding-right:100px;
+  max-width: 90%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .landing-page {
+    flex-direction: column;
+  }
+
+  .left-panel, .right-panel {
+    padding: 20px;
+    flex: unset;
+    width: 100%;
+  }
+
+  .main-heading {
+    font-size: 48px;
+    padding-top: 40px;
+  }
+
+  .landing-image {
+    padding-right: 0;
+    max-width: 80%;
+  }
+
+  .owner-login {
+    top: 15px;
+    right: 15px;
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
